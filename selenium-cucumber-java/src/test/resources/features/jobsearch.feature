@@ -50,3 +50,6 @@ Feature: Verify Create Job Alert  Page
     Given LoggedInUser is on cjaPwaDeletePage
     When User deletes the cjaOnPwa
     Then Validate cja is deleted
+    
+    
+      
