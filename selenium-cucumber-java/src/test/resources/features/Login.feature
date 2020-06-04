@@ -8,4 +8,4 @@ Feature: login23
     When user click on new form
     And user navigate to jd page
     And user navigate to cja page
-    And click on autosuggestor
+    And click on autosuggestor1
