@@ -1,4 +1,4 @@
-Feature: Login
+Feature: new
   <Some interesting description here>
 
   Scenario: I login with valid credential
