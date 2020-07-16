@@ -510,3 +510,7 @@ Then SameWindowValidationOf the link <url3>
 When User is hovering on <element>
 And User clicked on <locator>
 Then SameWindowValidationOf the link <url2>    
+
+Scenario: validation of hfhf
+Given logged in to Whtma page
+
