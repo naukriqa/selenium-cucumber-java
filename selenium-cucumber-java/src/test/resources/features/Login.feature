@@ -18,3 +18,7 @@ Feature: login23
     And user navigate2 to jd page
     And user navigate2 to cja page
     And click on2 autosuggestor   
+    
+  Scenario: I login with valid credential3
+    Given I navigate to login file
+    And user navigates to second page
