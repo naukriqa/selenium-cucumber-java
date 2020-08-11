@@ -22,3 +22,4 @@ Feature: login23
   Scenario: I login with valid credential3
     Given I navigate to login file
     And user navigates to second page
+    And user navigate to third page
