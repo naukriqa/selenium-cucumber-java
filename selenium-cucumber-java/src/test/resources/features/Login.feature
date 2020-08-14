@@ -17,9 +17,12 @@ Feature: login23
     When user click2 on new form
     And user navigate2 to jd page
     And user navigate2 to cja page
-    And click on2 autosuggestor   
+    And click on2 autosuggestor
+    Then Got It Banner should be visible
+    
     
   Scenario: I login with valid credential3
     Given I navigate to login file
     And user navigates to second page
     And user navigate to third page
+    Then Got It Banner should not be visible
