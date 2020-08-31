@@ -37,3 +37,11 @@ Scenario: To show Facebook handle on overview tab
     And when user clicks on Youtube icon
     Then User is taken to company Youtube page
     
+     Scenario: To show Twitter handle on overview tab
+    <Some interesting scenario steps here>
+    Given Logged in User is on Company Page Free
+    When User is on Overview tab
+    And if Twitter link is available 
+    Then Twitter icon is shown
+    And when user clicks on Twitter icon
+    Then User is taken to company Twitter page
