@@ -45,3 +45,12 @@ Scenario: To show Facebook handle on overview tab
     Then Twitter icon is shown
     And when user clicks on Twitter icon
     Then User is taken to company Twitter page
+    
+     Scenario: To show social media handles on overview tab aligned center
+    <Some interesting scenario steps here>
+    Given Logged in User is on Company Page Free
+    When User is on Overview tab
+    And if social media handles are present
+    Then the icons are aligned centrally
+    
+    
