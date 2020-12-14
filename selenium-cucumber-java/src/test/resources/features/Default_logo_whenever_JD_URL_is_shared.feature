@@ -5,6 +5,6 @@ Feature:Default logo whenever JD URL is shared
     logo is present on JD
     <Some interesting scenario steps here>
     Given: Any user is on JD page with no logo present
-    WHEN  JD url is shared on any social platform
-    AND Logo added on JD is not of 200X200
+    When:  JD url is shared on any social platform
+    And: Logo added on JD is not of 200X200
     Then Naukri Logo should be visible in thumbnail along with URL 
