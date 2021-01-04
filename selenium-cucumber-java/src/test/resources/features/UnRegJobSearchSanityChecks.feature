@@ -2,7 +2,8 @@ Feature:
   Basic sanity checks for unreg job search
 
   Scenario:
-    Validate that company searches is working fine when URL is enteredWhen Not Logged in User enters a URL of a company that has jobs live. e.g https://www.naukri.com/amazon-development-centre-india-pvt-ltd-jobs-careers-194374
+    Validate that company searches is working fine when URL is entered
+        When Not Logged in User enters a URL of a company that has jobs live. e.g https://www.naukri.com/amazon-development-centre-india-pvt-ltd-jobs-careers-194374
         Then User should be navigated to search results page
         And 1-<x> of <y> Java Developer Jobs should be visible
         And <x> job tuples should be visible
