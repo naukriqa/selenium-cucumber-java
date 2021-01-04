@@ -6,7 +6,7 @@ Feature:
         Then User should be navigated to search results page
         And 1-<x> of <y> Java Developer Jobs should be visible
         And <x> job tuples should be visible
-        And  <y>/20 pages should be visible
+        And  <y>/20 +1 (if not exact multiple of 20) pages should be visible
         And company name in tuple should be that mentioned in URL. e.g Amazon
         
     Scenario: Validate that company searches is working fine when company name is searched in keyword textbox
@@ -14,7 +14,8 @@ Feature:
         When Not Logged in User enters name of a company that has jobs live in keyword textbox. e.g Amazon
         Then User should be navigated to search results page
         And 1-<x> of <y> Java Developer Jobs should be visible
-        And <x> job tuples should be visibleAnd  <y>/20 pages should be visible
+        And <x> job tuples should be visible
+        And <y>/20 +1 (if not exact multiple of 20) pages should be visible
         And company name in tuple should be that mentioned in keyword textbox. e.g Amazon
         
     Scenario: Validate that Job Id search is working fine when Job Id is searched in keyword textbox
@@ -36,7 +37,7 @@ Feature:
         Then User should be navigated to search results page
         And 1-<x> of <y>Java Developer Jobs In Mumbai should be visible
         And <x> job tuples should be visible
-        And  <y>/20 pages should be visible
+        And  <y>/20 +1 (if not exact multiple of 20) pages should be visible
         And location list mentioned in top 5 tuples should contain Mumbai
         
     Scenario: Validate that the jobCount displayed in breadcrumbs number of  job tuples and number of pages displayed at the bottom of SRP in  not logged in mode
@@ -45,7 +46,7 @@ Feature:
         Then User should be navigated to search results page
         And 1-<x> of <y> Java Developer Jobs should be visible
         And <x> job tuples should be visible
-        And  <y>/20 pages should be visible
+        And  <y>/20 +1 (if not exact multiple of 20) pages should be visible
         
     Scenario: Validate that filters and sort on SRP Page are working correctly
         Given User is on SRP Page after searching for java developer
