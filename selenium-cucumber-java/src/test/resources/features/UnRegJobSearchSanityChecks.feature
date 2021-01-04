@@ -52,7 +52,8 @@ Feature:
         Given User is on SRP Page after searching for java developer
         Then 1-<x> of <y> Java Developer Jobs should be visible
         When user applies freshness filter of last 1 day
-        Then 1-<a> of <b> Java Developer Jobs should be visibleAnd  a <=x and b<y
+        Then 1-<a> of <b> Java Developer Jobs should be visible
+        And  a <=x and b<y
         And  Posting date displayed on tuple is "JUST NOW" or "TODAY" or "1 DAY AGO"
         When user clicks on Applied(1) and unchecks Last 1day
         Then 1-<x> of <y> Java Developer Jobs should be visible
